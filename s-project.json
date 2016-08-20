@@ -1,0 +1,7 @@
+{
+  "name": "aws-chatbot",
+  "custom": {},
+  "plugins": [
+    "serverless-cors-plugin"
+  ]
+}
