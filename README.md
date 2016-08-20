@@ -7,9 +7,9 @@ npm install -g serverless@v0.5.5
 ```
 #### 2) Clone this repo
 ```
-git clone git@github.com:
+git clone git@github.com:godd9170/aws-chatbot.git
 ```
-#### 3) install the modules (Serverless v0 doesn't like unmet dependencies)
+#### 3) install the modules
 ```
 npm install i
 ```
@@ -25,10 +25,7 @@ Within `_meta > variables > s-variables-common.json` ensure the json looks like 
 
 ```
 {
-  "project": "venga-usage",
-  "salesforce_username": "test@test.com",
-  "salesforce_password": "p@$$w0rd",
-  "salesforce_token": "TOKEN_HERE"
+  "project": "aws-chatbot",
 }
 
 ```
@@ -39,9 +36,6 @@ If you're creating a new function, and you'd like access to those credentials in
 "environment": {
     "SERVERLESS_PROJECT": "${project}",
     "SERVERLESS_STAGE": "${stage}",
-    "SERVERLESS_REGION": "${region}",
-    "SFDC_USER" : "${salesforce_username}",
-    "SFDC_PASSWORD" : "${salesforce_password}",
-    "SFDC_TOKEN" : "${salesforce_token}"
+    "SERVERLESS_REGION": "${region}"
   }
 ```
