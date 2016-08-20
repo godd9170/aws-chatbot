@@ -39,3 +39,7 @@ If you're creating a new function, and you'd like access to those credentials in
     "SERVERLESS_REGION": "${region}"
   }
 ```
+
+## Some Inspiration
+
+https://medium.com/@pixelcodeuk/create-a-slack-slash-command-with-aws-lambda-83fb172f9a74#.yqkccdlvq
